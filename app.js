@@ -15,12 +15,8 @@ mod.controller("WordCalculator", function($scope) {
     if ((wordCount <=3) && (wordCount >0)){
       $scope.val = "Enjoy!"
     }
-    else if (wordCount == 0){
-      $scope.val = "Please enter data first"
-    }
-
     else {
-      $scope.val = "Please enter data first"
+      $scope.val = "Too much!"
     }
   };
 });
