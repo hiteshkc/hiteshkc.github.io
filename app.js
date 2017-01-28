@@ -1,12 +1,13 @@
 mod = angular.module("LunchCheck", [])
 mod.controller("WordCalculator", function($scope) {
-  $scope.inputText = "enter something"
+  $scope.inputText = ""
   $scope.val = ""
 
   $scope.calculateResult = function () {
+
     if ($scope.inputText == "") {
       $scope.val = "Please enter data first"
-      return
+      return 0
     }
     var wordSplit = $scope.inputText.split(",")
     var wordCount = wordSplit.length;
