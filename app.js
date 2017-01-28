@@ -1,4 +1,5 @@
-mod = angular.module("LunchCheck", [])
+(function() {
+  mod = angular.module("LunchCheck", [])
 mod.controller("WordCalculator", function($scope) {
   $scope.inputText = ""
   $scope.val = ""
@@ -21,3 +22,4 @@ mod.controller("WordCalculator", function($scope) {
     }
   };
 });
+})();
